@@ -1,0 +1,29 @@
+.clients-container {
+  padding: 1rem;
+}
+
+.clients-content {
+  max-width: 800px;
+}
+
+.clients-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.clients-placeholder {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.clients-placeholder p {
+  color: #6b7280;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}

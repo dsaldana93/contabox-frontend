@@ -1,0 +1,449 @@
+.reports-container {
+  padding: 1rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+/* Reports List Styles */
+.reports-list {
+  max-width: 800px;
+}
+
+.reports-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 2rem;
+}
+
+.report-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.report-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 0.5rem 0;
+}
+
+.report-card-description {
+  color: #6b7280;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.5;
+}
+
+.parameters-button {
+  background: #6b46c1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.parameters-button:hover {
+  background: #553c9a;
+}
+
+/* Form Input Styles */
+.form-input {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  border-color: #6b46c1;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(107, 70, 193, 0.1);
+}
+
+/* Checkbox Styles */
+.form-checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.form-checkbox {
+  width: 1rem;
+  height: 1rem;
+  accent-color: #6b46c1;
+}
+
+.form-checkbox-label {
+  font-size: 0.875rem;
+  color: #374151;
+  user-select: none;
+  letter-spacing: 0.5px;
+}
+
+.parameters-button:hover {
+  background: #553c9a;
+}
+
+/* Parameters Modal */
+.parameters-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.parameters-content {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.parameters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #374151;
+  font-size: 0.875rem;
+}
+
+.form-select {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background: white;
+  cursor: pointer;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.consult-button {
+  background: #6b46c1;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.consult-button:hover {
+  background: #553c9a;
+}
+
+.close-button {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-transform: uppercase;
+}
+
+.close-button:hover {
+  background: #4b5563;
+}
+
+/* Calculations View */
+.calculations-view {
+  width: 100%;
+}
+
+.calculations-header {
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  background: #6b7280;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background: #4b5563;
+}
+
+.calculations-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.service-section {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.service-title {
+  background: #f3f4f6;
+  padding: 1rem 1.5rem;
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.calculation-table {
+  overflow-x: auto;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.calculation-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: max-content;
+}
+
+.calculation-table thead {
+  background: #e5e7eb;
+}
+
+.calculation-table th {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  border-right: 1px solid #d1d5db;
+  line-height: 1.3;
+  min-width: 120px;
+  max-width: 150px;
+  white-space: normal;
+  word-wrap: break-word;
+  vertical-align: middle;
+  hyphens: auto;
+}
+
+.calculation-table th:last-child {
+  border-right: none;
+}
+
+.calculation-table tbody tr {
+  background: white;
+}
+
+.calculation-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.calculation-table td {
+  padding: 1rem 0.75rem;
+  font-size: 0.875rem;
+  color: #1f2937;
+  text-align: center;
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 500;
+  min-width: 120px;
+  max-width: 150px;
+  white-space: normal;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+.calculation-table td:last-child {
+  border-right: none;
+}
+
+.calculation-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Table-specific styling */
+.enajenacion-table th,
+.enajenacion-table td {
+  min-width: 120px;
+  max-width: 140px;
+}
+
+.hospedaje-table th,
+.hospedaje-table td {
+  min-width: 130px;
+  max-width: 150px;
+}
+
+.terrestre-table th,
+.terrestre-table td {
+  min-width: 120px;
+  max-width: 140px;
+}
+
+.iva-table th,
+.iva-table td {
+  min-width: 110px;
+  max-width: 130px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .reports-container {
+    padding: 0.5rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+  }
+  
+  .parameters-content {
+    padding: 1rem;
+  }
+  
+  .calculation-table th,
+  .calculation-table td {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    min-width: 100px;
+    max-width: 120px;
+  }
+  
+  .service-title {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* Adjust column widths for mobile */
+  .iva-table th,
+  .iva-table td {
+    min-width: 90px;
+    max-width: 110px;
+  }
+
+  .terrestre-table th,
+  .terrestre-table td {
+    min-width: 100px;
+    max-width: 120px;
+  }
+
+  .hospedaje-table th,
+  .hospedaje-table td {
+    min-width: 110px;
+    max-width: 130px;
+  }
+
+  .enajenacion-table th,
+  .enajenacion-table td {
+    min-width: 100px;
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculation-table th,
+  .calculation-table td {
+    padding: 0.375rem;
+    font-size: 0.65rem;
+    min-width: 80px;
+    max-width: 100px;
+  }
+
+  /* Further reduce column widths for very small screens */
+  .iva-table th,
+  .iva-table td {
+    min-width: 75px;
+    max-width: 90px;
+  }
+
+  .terrestre-table th,
+  .terrestre-table td {
+    min-width: 80px;
+    max-width: 95px;
+  }
+
+  .hospedaje-table th,
+  .hospedaje-table td {
+    min-width: 85px;
+    max-width: 105px;
+  }
+
+  .enajenacion-table th,
+  .enajenacion-table td {
+    min-width: 80px;
+    max-width: 95px;
+  }
+}
+
+/* Scroll indicator for tables */
+.calculation-table::after {
+  content: "← Desliza para ver más →";
+  display: block;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #6b7280;
+  padding: 0.5rem;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+@media (min-width: 1200px) {
+  .calculation-table::after {
+    display: none;
+  }
+}
