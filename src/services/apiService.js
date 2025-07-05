@@ -89,6 +89,39 @@ export const reportService = {
       throw error.response?.data || error.message;
     }
   },
+
+  getCFDIData: async (objectId, rfc, filterType = 'todos', cfdiType = 'I', section = 'entidades') => {
+    try {
+      const response = await apiClient.get(`/api/cfdi/${objectId}`, {
+        params: { rfc, filter_type: filterType, cfdi_type: cfdiType, section },
+      });
+      return response.data;
+    } catch (error) {
+      throw error.response?.data || error.message;
+    }
+  },
+
+  getCFDIDataByPeriod: async (month, year, rfc, filterType = 'todos', cfdiType = 'I', section = 'entidades') => {
+    try {
+      const response = await apiClient.get(`/api/cfdi/period`, {
+        params: { month, year, rfc, filter_type: filterType, cfdi_type: cfdiType, section },
+      });
+      return response.data;
+    } catch (error) {
+      throw error.response?.data || error.message;
+    }
+  },
+
+  getCFDISummary: async (objectId, rfc) => {
+    try {
+      const response = await apiClient.get(`/api/cfdi/${objectId}/summary`, {
+        params: { rfc },
+      });
+      return response.data;
+    } catch (error) {
+      throw error.response?.data || error.message;
+    }
+  },
 };
 
 // Servicio para obtener datos de MongoDB

@@ -1,0 +1,171 @@
+/* CSS específico para arreglar la visibilidad del sidebar */
+
+/* Forzar visibilidad absoluta de todos los elementos del sidebar */
+.sidebar-navigation {
+  width: 300px !important;
+  background: #f8fafc !important;
+  border-right: 2px solid #e2e8f0 !important;
+  padding: 20px !important;
+  flex-shrink: 0 !important;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.sidebar-navigation * {
+  box-sizing: border-box !important;
+}
+
+/* Secciones de navegación */
+.sidebar-navigation .nav-section {
+  margin-bottom: 30px !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* Títulos de sección */
+.sidebar-navigation .nav-section h4 {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #1e293b !important;
+  margin: 0 0 15px 0 !important;
+  padding: 15px 10px !important;
+  border-bottom: 2px solid #e2e8f0 !important;
+  background: #f1f5f9 !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  letter-spacing: 0.3px !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.sidebar-navigation .nav-section h4.active {
+  color: #3b82f6 !important;
+  border-bottom-color: #3b82f6 !important;
+  background: #eff6ff !important;
+}
+
+/* Contenedor de botones */
+.sidebar-navigation .nav-items {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  margin-top: 15px !important;
+  padding: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 100 !important;
+}
+
+/* Botones individuales - MÁXIMA VISIBILIDAD */
+.sidebar-navigation .nav-item {
+  /* Posicionamiento y visibilidad */
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative !important;
+  z-index: 101 !important;
+  
+  /* Dimensiones */
+  width: 100% !important;
+  min-height: 50px !important;
+  padding: 15px 20px !important;
+  margin: 0 0 10px 0 !important;
+  box-sizing: border-box !important;
+  
+  /* Apariencia */
+  background: #ffffff !important;
+  border: 3px solid #3b82f6 !important;
+  border-radius: 10px !important;
+  
+  /* Texto */
+  color: #1e293b !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  text-align: left !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  line-height: 1.2 !important;
+  
+  /* Interacción */
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  
+  /* Sombras */
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2) !important;
+}
+
+/* Estado hover */
+.sidebar-navigation .nav-item:hover {
+  background: #f1f5f9 !important;
+  border-color: #2563eb !important;
+  color: #1e293b !important;
+  transform: translateX(5px) !important;
+  box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Estado activo */
+.sidebar-navigation .nav-item.active {
+  background: #3b82f6 !important;
+  color: #ffffff !important;
+  border-color: #2563eb !important;
+  font-weight: 800 !important;
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4) !important;
+  transform: translateX(3px) !important;
+}
+
+/* Forzar texto visible en todos los estados */
+.sidebar-navigation .nav-item,
+.sidebar-navigation .nav-item *,
+.sidebar-navigation .nav-item:hover,
+.sidebar-navigation .nav-item:hover *,
+.sidebar-navigation .nav-item:focus,
+.sidebar-navigation .nav-item:focus * {
+  color: #1e293b !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+.sidebar-navigation .nav-item.active,
+.sidebar-navigation .nav-item.active * {
+  color: #ffffff !important;
+}
+
+/* Botón de volver */
+.sidebar-navigation .back-button {
+  background: #6b7280 !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 20px !important;
+  border-radius: 8px !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  margin-bottom: 25px !important;
+  transition: background-color 0.2s !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.sidebar-navigation .back-button:hover {
+  background: #4b5563 !important;
+}
+
+/* Debug: agregar un fondo de color para verificar que se renderiza */
+.sidebar-navigation .nav-item::before {
+  content: "●" !important;
+  color: #ef4444 !important;
+  font-size: 12px !important;
+  margin-right: 8px !important;
+  display: inline-block !important;
+}
+
+/* Asegurar que no hay overflow hidden */
+.sidebar-navigation,
+.sidebar-navigation *,
+.main-view,
+.reports-container {
+  overflow: visible !important;
+}

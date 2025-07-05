@@ -1,0 +1,335 @@
+.cfdi-table-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.cfdi-header {
+  margin-bottom: 20px;
+}
+
+.cfdi-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Filter Tabs */
+.filter-tabs {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.filter-tab {
+  padding: 12px 24px;
+  background-color: #e9ecef;
+  border: none;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  color: #666;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.filter-tab:hover {
+  background-color: #dee2e6;
+  color: #333;
+}
+
+.filter-tab.active {
+  background-color: #fff;
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+  font-weight: 600;
+}
+
+/* Summary */
+.cfdi-summary {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.summary-label {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Table */
+.cfdi-table-wrapper {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+.cfdi-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  min-width: 1400px;
+}
+
+.cfdi-table th {
+  background-color: #f8f9fa;
+  padding: 12px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.cfdi-table td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #dee2e6;
+  vertical-align: middle;
+}
+
+.cfdi-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Row styling based on consideration status */
+.considered-row {
+  background-color: #f8fff8;
+}
+
+.not-considered-row {
+  background-color: #fff8f8;
+}
+
+/* Status Icons */
+.status-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.status-icon.considered {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-icon.not-considered {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Edit Button */
+.edit-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.edit-button:hover {
+  background-color: #e9ecef;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-badge.vigente {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.cancelado {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+/* Specific cell styling */
+.folio-cell {
+  font-family: monospace;
+  font-size: 12px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.client-cell {
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.classification-cell {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.concepts-cell {
+  text-align: center;
+  font-weight: 500;
+}
+
+.amount-cell {
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+}
+
+.status-cell {
+  text-align: center;
+}
+
+/* No data message */
+.no-data {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Footer */
+.table-footer {
+  background-color: #fff;
+  padding: 15px 20px;
+  border-top: 1px solid #dee2e6;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.footer-summary {
+  text-align: right;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cfdi-table-wrapper {
+    overflow-x: scroll;
+  }
+  
+  .cfdi-summary {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filter-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .filter-tab {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cfdi-table-container {
+    padding: 10px;
+  }
+  
+  .cfdi-title {
+    font-size: 20px;
+  }
+  
+  .cfdi-table th,
+  .cfdi-table td {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+  
+  .summary-value {
+    font-size: 16px;
+  }
+}
+
+/* Loading and error states */
+.loading-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  color: #666;
+}
+
+.error-state {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+  color: #dc3545;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Tooltip styles */
+.cfdi-table td[title] {
+  cursor: help;
+}
+
+/* Scrollbar styling for table wrapper */
+.cfdi-table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.cfdi-table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.cfdi-table-wrapper::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+.cfdi-table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
